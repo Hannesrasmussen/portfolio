@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+html {
+    background: rgb(0, 0, 0);
+}
+
+body {
+    margin: 0px;
+    min-height: 100%;
+    background: black;
+    background-size: 1500px 1200px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+
+#message {
+    top: 10px;
+    right: 10px;
+    position:fixed;
+    z-index: 31;
+    padding: 5px;
+    margin: 20px;
+    font-size: 30px;
+    font-family: Oswald, sans-serif;
+    letter-spacing: 3px;
+    color: white;
+}
+
+#darkeffect {
+    position:fixed;
+    pointer-events: none;
+    height: 100%;
+    width: 100%;
+    z-index: 30;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(10,7,7,0) 65%, rgba(0,0,0,1) 100%);
+}
+
+#header {
+    position: sticky;
+    display: flex;
+    top: 0;
+    width: fit-content;
+    margin: auto;
+    justify-content:center;
+    padding: 15px;
+    z-index: 30;
+    text-align: center;
+    height: fit-content;
+    transition: 0.5s;
+}
+
+#header:hover {
+    opacity: 100%;
+}
+
+.header-item {
+    margin: auto;
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    transition: 0.3s;
+
+    background-color: rgba(0, 0, 0, 0.78);
+    border-radius: 50%;
+    z-index: 5;
+}
+
+.header-item:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#about {
+    height: fit-content;
+    font-size: 56px;
+    color: white;
+    padding: 30px;
+    margin: 50px; 
+    margin-bottom: 25px;
+}
+
+#about h1 {
+    margin: 0;
+    font-family: Oswald, sans-serif;
+    letter-spacing: 10px;
+    color:rgb(255, 255, 255);
+}
+
+#about h2 {
+    font-size: 40px;
+    color: hsl(128, 13%, 52%);
+    margin-left: 0px;
+}
+#about hr {
+    width: 50%;
+    margin-left: 0;
+    height: 5px;
+    border: none;
+    background-color: white;
+}
+
+#about p {
+    font-size: 35px;
+    max-width: 55%;
+    color: rgb(184, 184, 184);
+}
+
+
+#logo {
+    margin: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    width: 125px;
+    height: 125px;
+    transition: 0.3s;
+
+    background-color: rgba(0, 0, 0, 0.78);
+    border-radius: 50%;
+    z-index: 5;
+}
+#logo:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+main {
+    box-sizing: border-box;
+    margin: 50px;
+    background-color: rgb(0, 0, 0);
+    min-height: 100%;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 200px;
+}
+
+.project {
+    display: flex;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    max-height: 350px;
+    width: 95%;
+    transition: 0.2s;
+    pointer-events: all;
+}
+
+.project-status {
+    position: relative;
+    height: 0;
+    width: 0;
+}
+
+.project-status p {
+    position: absolute;
+    font-size: 25px;
+    margin: 10px;
+    left: -30px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: fit-content;
+    width: fit-content;
+    color: rgb(27, 26, 26);
+    background-color: rgb(255, 255, 255);
+}
+
+.project-description {
+    margin-top: 5px;
+    margin: auto;
+    margin-left: 20px;
+    min-width: 50%;
+    max-width: 50%;
+}
+
+.project-title {
+    color:rgb(37, 37, 37);
+    padding: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 40px;
+}
+
+.project-text {
+    color:rgb(37, 37, 37);
+    font-size: 25px;
+    margin: 0px;
+    padding: 15px;
+}
+
+#work {
+    max-height: fit-content;
+    max-width: fit-content;
+    padding-top: 50px;
+    border-radius: 10px;
+    margin-top: 0px;
+}
+
+.work-year {
+    font-size: 25px;
+    color: white;
+    width: fit-content;
+    letter-spacing: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0;
+    background-color: rgb(32, 32, 32);
+}
+
+.work-date {
+    font-size: 20px;
+    padding: 10px;
+    line-height: 30px;
+    color: hsl(128, 13%, 52%);
+}
+
+.work-topic {
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
+    border: solid 5px rgb(225, 225, 225);
+    transition: 0.4s;
+}
+
+.work-topic:hover {
+    transition: 0.1s;
+    cursor: default;
+    transform: scale(1.01);
+}
+
+.work-topic .date-n-name {
+    min-height: 55px;
+}
+
+.work-topic .work-date {
+    text-align: center;
+    color: rgb(113, 175, 104);
+    width: 100px;
+    padding: 0px;
+    line-height: 35px;
+}
+.work-topic .project-title{
+    color: rgb(50, 64, 48);
+    padding-left: 0px;
+    font-size: 30px;
+}
+.work-topic .project-text{
+    color: rgb(7, 7, 7);
+    padding-left: 100px;
+    font-size: 20px;
+}
+
+.smaller-works-container {
+    background-color: rgb(18, 18, 18);
+    box-shadow: inset 3px 3px 10px rgb(0, 0, 0);
+    padding: 25px;
+}
+
+/* Minor work */
+
+.work-topic-minor {
+    margin: 10px;
+    background-color: hsla(128, 13%, 52%, 0.855);;
+    opacity: 50%;
+    transition: 0.3s;
+}
+
+.work-topic-minor:hover {
+    transition: 0.3s;
+    opacity: 100%;
+    transform: scale(1.01);
+    cursor:default;
+}
+
+.work-topic-minor .date-n-name {
+    height: 50px;
+}
+
+.work-topic-minor .work-date {
+    text-align: center;
+    font-size: 20px;
+    color: rgb(255, 254, 254);
+    width: 100px;
+    padding: 0px;
+    line-height: 20px;
+}
+.work-topic-minor .project-title{
+    color: rgb(255, 255, 255);
+    padding: 0;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.work-topic-minor .project-text{
+    background-color: white;
+    color: rgb(26, 26, 26);
+    font-size: 22px;
+    padding-left: 100px;
+}
+
+.date-n-name {
+    display: flex;
+}
+
+.vertical-rule {
+    background-color: rgba(0, 0, 0, 0.167);
+    height: 20px;
+    width: 3px;
+    margin: 5px;
+    margin-left: 75px;
+}
+
+.project:hover {
+    transform: scale(0.995);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.project-img {
+    float: left;
+    height: 350px;
+    width: 60%;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+  
+::-webkit-scrollbar-track {
+    background:  rgb(0, 0, 0);
+    background-size: 800% 800%;
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+@media screen and (max-width:1600px){
+    #about p {
+        font-size: 25px;
+    }
+    .project-text {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:800px){
+   
+}
+
+
+/* Project specific stuff: */
+#project-1 {
+    background: url(img/spritejs.png);
+    background-position:center;
+    background-size:cover;
+}
+
+#project-2 {
+    background:url(img/joust.jpg);
+    background-size:cover;
+    background-position: center;
+}
+
+#project-3 {
+    background: rgb(142, 115, 69);
+    background-position:center;
+}
