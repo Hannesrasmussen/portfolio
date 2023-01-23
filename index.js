@@ -47,29 +47,46 @@ body.addEventListener("mousemove", (e) => {
 });
 
 function scrollFunction() {
-    percentage = Math.round(window.scrollY * 0.1)
-    if (window.scrollY > previousY) {
-        header.style.opacity = "5%";
-    } else if (window.scrollY < previousY){
+
+    // Check if mobile, cuz it doesnt work there.
+
+    if (window.innerWidth < 800) {
         header.style.opacity = "100%";
+        return
+    } else {
+        console.log(window.innerWidth)
+        percentage = Math.round(window.scrollY * 0.1)
+        if (window.scrollY > previousY) {
+            header.style.opacity = "5%";
+        } else if (window.scrollY < previousY){
+            header.style.opacity = "100%";
+        }
+        previousY = window.scrollY;
     }
-    previousY = window.scrollY;
+
+    
 }
 
 window.onscroll = scrollFunction;
 
 addEventListener("resize", () => {
-    let y;
-    clearTimeout(y);
-    let x = $('#site-landing');
-    
-    x[0].style.transition = "0.2s";
-    x[0].style.opacity = "0%";
-    
-    y = setTimeout(() => {
-        x[0].style.opacity = "100%";
+    if (window.innerWidth < 800) {
+        header.style.opacity = "100%";
+        return
+    } else {
+        let y;
+        clearTimeout(y);
+        let x = $('#site-landing');
+        
         x[0].style.transition = "0.2s";
-    }, 1000);
+        x[0].style.opacity = "0%";
+        
+        y = setTimeout(() => {
+            x[0].style.opacity = "100%";
+            x[0].style.transition = "0.2s";
+        }, 1000);
+    }
+    
     
     $('#site-landing').polygonizr({
         canvasWidth: $("body").width(),

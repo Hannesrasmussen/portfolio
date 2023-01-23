@@ -398,6 +398,10 @@ p {
         display: block;
     }
 
+    header {
+        float: left;
+    }
+
     .scrollable {
         box-sizing: border-box;
         padding: 5px;
