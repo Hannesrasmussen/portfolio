@@ -6,224 +6,205 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hannes Rasmussen</title>
     <link href="stylesheet.css" rel="stylesheet"></style>
+    <link rel="icon" type="image/x-icon" href="img/tengutake_logo.png">
     <link href="extra_stylesheet.css" rel="stylesheet"></style>
 </head>
+
+<div id="popup-container">
+    <div id="close-button">&#x2716;</div>
+    <img id="popup-img" src="">
+</div>
+    
 <body>
-    <div id="mobile-warning">
-        <img id="mobile-logo" src="img/tengutake_logo.png">
-        <p>
-            Thank you for your interest, but there's no mobile version of this page just yet..
-        </p>
-    </div>
-
-    <div id="message">Work in progress</div>
     <div id="darkeffect"></div>
-    <div id="popup-message">
-        <div id="popup-dialogue">
-            <p id="popup-p">Thank you for your interest, but there's nothing to showcase this early in development.</p>
-            <button id="popup-button">OK</button>
-        </div>
-    </div>
+    <div id="site-landing"></div>
 
-<div id="content">
     <header id="header">
-        <a href="https://github.com/Hannesrasmussen" target="_">
-            <img class="header-item" src="img/icons/github-icon.png">
+        <a id="github" href="https://github.com/Hannesrasmussen" target="_">
         </a>
-            <div id="lil-header-item"></div>
-                <img id="logo" src="img/tengutake_logo.png">
-            <div id="lil-header-item"></div>
-        <a href="https://linkedin.com/in/hannes-rasmussen-1003ba238/" target="_">
-            <img class="header-item" src="img/icons/linkedin-round-icon.png">
+        <a id="linkedin" href="https://linkedin.com/in/hannes-rasmussen-1003ba238/" target="_">
         </a>
     </header>
-    <div id="about">
-        <h1>HANNES RASMUSSEN</h1>
-        <h2>Fullstack <b style="color:white">Software / Web</b> Developer</h2>
-        <hr>
-        <p id="aboutme">I am a 22-year-old Swedish guy and with a passion for programming and interface design.
-            In my spare time I enjoy programming random utilities, playing gimmicky indie-games, working out and eating a near hazardous amount of Capers.
-        </p>
-        <div id="knowledge">
-            <div id=knowledge-imgs>
-                <a target="_blank" href="https://en.wikipedia.org/wiki/HTML"><img src="img/icons/html.png"></a>
-                <a target="_blank" href="https://en.wikipedia.org/wiki/CSS"><img src="img/icons/css.png"></a>
-                <a target="_blank" href="https://en.wikipedia.org/wiki/JavaScript"><img src="img/icons/js.png"></a>
-                <a target="_blank" href="https://en.wikipedia.org/wiki/TypeScript"><img src="img/icons/ts.png"></a>
-                <a target="_blank" href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"><img src="img/icons/c-sharp.png"></a>
+
+    <div class="section">
+        <div class="num">
+            <p>01</p>
+            <p>2023</p>
+        </div>
+        
+        <div id="about">
+            <img id="about-img">
+            <div id="about-text">
+                <h1>Hannes Rasmussen</h1>
+                <h2>Frontend Developer</h2>
+                <p>
+                    I am a 22-year-old Swedish guy with a passion for interactive design and front end software development.
+                    I enjoy golfing, music, lifting weights, watching good movies and playing critically acclaimed indie games.
+                </p>
+                <p>
+                    I am a team player with excellent communication skills and am comfortable working in a collaborative environment. 
+                    I am experienced in working with .Net projects, and Agile methodologies. I am always eager to learn new technologies and stay up-to-date with the latest industry trends.
+                </p>
+                <div class="num">
+                    <p class="specialities">Typescript</p>
+                    <p class="specialities">Javascript</p>
+                    <p class="specialities">HTML</p>
+                    <p class="specialities">CSS</p>
+                    <p class="specialities">C#</p>
+                    <p class="specialities">React</p>
+                    <p class="specialities">GIT</p>
+                </div>
             </div>
+            
         </div>
     </div>
-    
-    <main>
-        <!--Projects!!-->
-        <div class="project" data-adress="https://github.com/Hannesrasmussen/Sprite.js">
-            <div class="project-status">
-                <p>Available</p>
-            </div>
-            <div class="project-img" id="project-1"></div>
-            <div class="project-description">
-                <h2 class="project-title">Sprite.js</h2>
-                <p class="project-text">The first Javascript package I ever made. The idea behind this project was to test myself in solving a technical problem. Originally intended as a set of helper functions for a web game similar to Cookie Clicker.</p>
-                <p class="project-text">May be converted to an npm package at some point just for fun.</p>
-            </div>
-        </div>
-        <div class="project">
-            <div class="project-img" id="project-2"></div>
-            <div class="project-description">
-                <h2 class="project-title">Sweat</h2>
-                <p class="project-text">I grew tired of the subscription-based applications for weightlifting out there, so I decided to create my own mobile application for logging workouts. End goal is to launch it at a fixed price on the IOS Appstore.
-                </p>
-            </div>
-        </div>
-        <div class="project" data-adress="applications/joust.html">
-            <div class="project-status">
-                <p>Available</p>
-            </div>
-            <div class="project-img" id="project-3"></div>
-            <div class="project-description">
-                <h2 class="project-title">Project Joust</h2>
-                <p class="project-text">A web based arcade fighting game created for a University project course. Created within the span of 600 hours. Received the highest grade possible. 
-                </p>
-                <p class="project-text">A very good end product considering the constraints.</p>
-            </div>
-        </div>
-        <div class="project">
-            <div class="project-img" id="project-4"></div>
-            <div class="project-description">
-                <h2 class="project-title">Kaprifolet.se</h2>
-                <p class="project-text">I'm designing and programming Kaprifolet's new website. It will hopefully turn out as good as their coffee.
-                </p>
-                <p class="project-text">Currently prototyping. Nothing to show at this time.</p>
-            </div>
-        </div>
 
-        <!--Work timeline.. not gonna display this just yet.
-        <div id="work-container">
-        <div id="work">
-            <div class="work-topic">
-                <div class="date-n-name">
-                    <h2 class="work-date">2020</h2>
-                    <h2 class="project-title">Linneaus University <b style="font-size:20px">Interactive Media & Web Technologies</b></h2>
+    <br>
+
+    <div class="section">
+        <div class="num">
+            <p>02</p>
+            <h2>COMPETENCES</h2>
+            <p>2023</p>
+        </div>
+        <div id="more-container">
+            <div class="section-segment">
+                <div class="num">
+                    <h2>Education</h2>
+                    <p>Utbildning</p>
                 </div>
-                <p class="project-text"> Signed up for a three year program at Linneaus University in Växjö, Sweden. 
-                </p>
-                <div class="smaller-works-container">
-                    <div class="work-topic">
-                        <div class="date-n-name">
-                            <h2 class="work-date">2022</h2>
-                            <h2 class="project-title">Visma Spcs <b style="font-size:20px">Internship</b></h2>
+                <div class="scrollable">
+                    <div class="entry">
+                        <div class="line-thing"></div>
+                        <div class="num">
+                            <p>2020 - 2023</p>
+                            <p>3 Years</p>
                         </div>
-                        <p class="project-text">I did an internship at Visma spcs, Växjö. Learning React and Typescript and to work as a part of a team as well as a large organization. I had very fun during my time here.
-                        </p>
-
-                        <div class="smaller-works-container">
-
-                            <div class="work-topic-minor">
-                                <div class="date-n-name">
-                                    <h2 class="work-date">&#9733;</h2>
-                                    <h2 class="project-title">Learned C#</h2>
-                                </div>
-                                <p class="project-text">Got to work within a .NET project with backend tasks. A welcome change of pace.
-                                </p>
-                            </div>
-
-                                <div class="vertical-rule"></div>
-
-                            <div class="work-topic-minor">
-                                <div class="date-n-name">
-                                    <h2 class="work-date">&#9733;</h2>
-                                    <h2 class="project-title">First merge to a company repository </h2>
-                                </div>
-                                <p class="project-text">A very neat milestone, and a nice little badge to add to my github profile.
-                                </p>
-                            </div>
-
-                                <div class="vertical-rule"></div>
-
-                            <div class="work-topic-minor">
-                                <div class="date-n-name">
-                                    <h2 class="work-date">&#9733;</h2>
-                                    <h2 class="project-title">Learned Typescript <b style="font-size:20px">&</b> React</h2>
-                                </div>
-                                <p class="project-text">Did so in preparation for the internship at Visma Spcs.
-                                </p>
-                            </div>
-                        </div> 
-                    </div>
-
-                    <div class="vertical-rule"></div>
-
-                    <div class="work-topic-minor">
-                        <div class="date-n-name">
-                            <h2 class="work-date">&#9733;</h2>
-                            <h2 class="project-title">Game development</h2>
-                        </div>
-                        <p class="project-text"> A major project course at the University gave me the opportunity to develop an arcade game from concept to finalized product. The project resulted in the highest possible grade. 
+                        <h2 class="entry-title">Interactive Media & Web Technologies</p>
+                        <p>
+                            Linnaeus University, Växjö - Bachelor of Science with Specialization in Web technologies.
                         </p>
                     </div>
-            
-                        <div class="vertical-rule"></div>
-            
-                        <div class="work-topic-minor">
-                            <div class="date-n-name">
-                                <h2 class="work-date">&#9733;</h2>
-                                <h2 class="project-title">Learned PHP <b style="font-size:20px">&</b> Database Theory</h2>
-                            </div>
-                            <p class="project-text"> 
-                                Also built my first application with a backend. I suppose therefore I can consider this my first fullstack development project. 
-                            </p>
+
+                    <div class="entry">
+                        <div class="line-thing"></div>
+                        <div class="num">
+                            <p>2016 - 2019</p>
+                            <p>3 Years</p>
                         </div>
-                        
-                        <div class="vertical-rule"></div>
-            
-                        <div class="work-topic-minor">
-                            <div class="date-n-name">
-                                <h2 class="work-date">&#9733;</h2>
-                                <h2 class="project-title">Worked with an API for the first time</h2>
-                            </div>
-                            <p class="project-text"> A group project at the Univeristy gave me the opportunity of working with and using an external API in web application development.
-                            </p>
-                        </div>
-            
-                            <div class="vertical-rule"></div>
-            
-                        <div class="work-topic-minor">
-                            <div class="date-n-name">
-                                <h2 class="work-date">&#9733;</h2>
-                                <h2 class="project-title">Learned Interaction design</h2>
-                            </div>
-                            <p class="project-text">Was introduced to interaction design at University. First successful iterative design process.
-                            </p>
-                        </div>
-        
-                            <div class="vertical-rule"></div>
-        
-                        <div class="work-topic-minor">
-                            <div class="date-n-name">
-                                <h2 class="work-date">&#9733;</h2>
-                                <h2 class="project-title">Learned Javascript</h2>
-                            </div>
-                            <p class="project-text">Took my first Javascript classes at University. Programmed my first application.
-                            </p>
-                        </div>
-        
-                            <div class="vertical-rule"></div>
-        
-                    <div class="work-topic-minor">
-                        <div class="date-n-name">
-                            <h2 class="work-date">&#9733;</h2>
-                            <h2 class="project-title">Learned HTML & CSS</h2>
-                        </div>
-                        <p class="project-text">Took my first HTML and CSS classes at University. 
+                        <h2 class="entry-title">Social Studies / Samhällskunskap</p>
+                        <p>
+                            Katedralskolan, Växjö - High School Diploma.
                         </p>
                     </div>
                 </div>
             </div>
-        </div>-->
+            <div class="section-segment">
+                <div class="num">
+                    <h2>Work Experience</h2>
+                    <p>Jobberfarenhet</p>
+                </div>
+                <div class="scrollable">
+                    <div class="entry">
+                        <div class="line-thing"></div>
+                        <div class="num">
+                            <p>2022 - 2023</p>
+                            <p>3 Months</p>
+                        </div>
+                        <h2 class="entry-title">Visma spcs - LIA Frontend Developer</p>
+                        <p>
+                            Worked within a large scale ASP.NET project. The job required extensive use of Typescript, React, CSS and C# to a lesser extent.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-segment">
+                <div class="num">
+                    <h2>Software</h2>
+                    <p>Programvara</p>
+                </div>
+                <div class="scrollable">
+                    <div class="entry">
+                        <div class="line-thing"></div>
+                        <div class="num">
+                            <p>2020-2023</p>
+                            <p>3 Years Experience</p>
+                        </div>
+                        <h2 class="entry-title">Visual Studio Code</p>
+                        <p>
+                            My go-to code editor for frontend related work. 
+                        </p>
+                    </div>
+                    <div class="entry">
+                        <div class="line-thing"></div>
+                        <div class="num">
+                            <p>2020-2022</p>
+                            <p>2 Years Experience</p>
+                        </div>
+                        <h2 class="entry-title">Adobe Illustrator</p>
+                        <p>
+                             I have used Illustrator extensively for both school and spare time activities.
+                        </p>
+                    </div>
+                    <div class="entry">
+                        <div class="line-thing"></div>
+                        <div class="num">
+                            <p>2020-2022</p>
+                            <p>4 Years Experience</p>
+                        </div>
+                        <h2 class="entry-title">Adobe Photoshop</p>
+                        <p>
+                            Adobe photoshop, although not affordable at the moment, is my favorite software for raster graphics. 
+                        </p>
+                    </div>
+                    <div class="entry">
+                        <div class="line-thing"></div>
+                        <div class="num">
+                            <p>2022-2023</p>
+                            <p>3 Months Experience</p>
+                        </div>
+                        <h2 class="entry-title">Visual Studio 22</p>
+                        <p>
+                            I have basic experience debugging, creating tools, shortcuts, building and navigating solutions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </div>
-    </main>
-</div>
+
+    <div class="section">
+        <div class="num">
+            <p>03</p>
+            <h2>EXTRAS</h2>
+            <p>2023</p>
+        </div>
+
+        <div id="extras-container">
+            <div class="extras-entry">
+                <div class="num">
+                    <p>2022</p>
+                    <p>Portfolio Website V1</p>
+                </div>
+                <img class="extras-img"src="img/ver1.png">
+            </div>
+            
+            <div class="extras-entry">
+                <div class="num">
+                    <p>2022</p>
+                    <p>Portfolio Website V2</p>
+                </div>
+                <img class="extras-img"src="img/ver2.png">
+            </div>
+        </div>
+    </div>
+
+    <script src="addons/jquery-3.6.3.min.js"></script>
+    <!--Credit to Revoltera!-->
+    <script src="addons/polygonizr.min.js"></script>
+    <!---->
     <script src="index.js"></script>
 </body>
 </html>
