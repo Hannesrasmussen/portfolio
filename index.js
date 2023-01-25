@@ -4,8 +4,10 @@ const aboutElem = document.getElementById("about");
 const extras = document.getElementsByClassName("extras-img");
 
 const popupdarkness = document.getElementById("popup-container");
-const closebutton = document.getElementById("close-button");
 const popupimg = document.getElementById("popup-img");
+
+const yearElems = document.getElementsByClassName("year");
+const date = new Date();
 
 
 var previousY = window.scrollY;
@@ -19,25 +21,38 @@ function visibleHeader() {
     header.style.opacity = "100%";
 }
 
-for (i = 0; i < extras.length; i++) {
-    extras[i].addEventListener("click", (e) => {{
-        popupdarkness.style.display = "block";
-        popupimg.src = e.target.src;
-        header.style.display = "none";
-
-        popupdarkness.addEventListener("click",(e) => {
-            header.style.display = "flex";
-            popupdarkness.style.display = "none";
-        })
-        closebutton.addEventListener("click",(e) => {
-            header.style.display = "flex";
-            popupdarkness.style.display = "none";
-        })
-        
-    }})
-    console.log(popupdarkness);
+function init() {
+    
+    for (i = 0; i < yearElems.length; i++) {
+        yearElems[i].innerHTML = date.getFullYear();
+    }
 }
 
+setInterval(() => {
+    if (window.innerWidth < 800) {
+        header.style.display = "flex";
+        popupdarkness.style.display = "none";
+        for (i = 0; i < extras.length; i++) {
+            extras[i].removeEventListener("click", showImage);
+        }
+    } else {
+        for (i = 0; i < extras.length; i++) {
+            extras[i].addEventListener("click", showImage)
+        }
+    }
+}, 1000);
+
+
+function showImage(e) {
+    popupdarkness.style.display = "block";
+    popupimg.src = e.target.src;
+    header.style.display = "none";
+    
+    popupdarkness.addEventListener("click",() => {
+    header.style.display = "flex";
+    popupdarkness.style.display = "none";
+    })
+}
 
 
 
@@ -67,8 +82,6 @@ function scrollFunction() {
     
 }
 
-window.onscroll = scrollFunction;
-
 addEventListener("resize", () => {
     if (window.innerWidth < 800) {
         header.style.opacity = "100%";
@@ -78,15 +91,14 @@ addEventListener("resize", () => {
         clearTimeout(y);
         let x = $('#site-landing');
         
-        x[0].style.transition = "0.2s";
+        x[0].style.transition = "0.4s";
         x[0].style.opacity = "0%";
         
         y = setTimeout(() => {
             x[0].style.opacity = "100%";
-            x[0].style.transition = "0.2s";
+            x[0].style.transition = "0.4s";
         }, 1000);
     }
-    
     
     $('#site-landing').polygonizr({
         canvasWidth: $("body").width(),
@@ -124,3 +136,6 @@ $('#site-landing').polygonizr({
     // Indicate the CSS z-index property by which to specify the stack order of the canvas. Default: "auto"
     canvasZ: "1"
 });
+
+window.onscroll = scrollFunction;
+window.onload = init;
