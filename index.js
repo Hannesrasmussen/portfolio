@@ -32,24 +32,23 @@ function init() {
 
 // Night mode!
 function lightOrNight() {
-    let date = new Date();
-    hour = date.getUTCHours();
-    console.log(date.getUTCHours())
-    console.log(typeof(hour))
-    
+    let hours = new Date().getHours()
+    let isDayTime = hours > 6 && hours < 17;
 
-    if (hour > 5 && hour < 18) {
+    
+    if (isDayTime) {
+        // If the user has dark mode.
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            return
+        }
+        
+        // Otherwise:
         document.getElementsByTagName("html")[0].style.filter = "invert()";
         document.getElementsByTagName("html")[0].style.background = "rgb(255,255,255)";
-        document.getElementsByTagName("img")[i].style.filter = "invert()";
-        
-        for (i = 0; i < document.getElementsByTagName("img").length; i++) {
-            document.getElementsByTagName("img")[i].style.filter = "invert()";
-        }
-    }
 
-    if( date.getUTCHours < 16) {
-        console.log(typeof(date.getUTCHours()))
+        for (i = 0; i < document.getElementsByTagName("img").length; i++) {
+            document.getElementsByTagName("img")[i].style.filter = "grayscale()";
+        }
     }
 }
 
@@ -94,7 +93,6 @@ function scrollFunction() {
         header.style.opacity = "100%";
         return
     } else {
-        console.log(window.innerWidth)
         percentage = Math.round(window.scrollY * 0.1)
         if (window.scrollY > previousY) {
             header.style.opacity = "5%";
