@@ -265,7 +265,7 @@ p {
 }
   
 ::-webkit-scrollbar-track {
-    background:  rgb(0, 0, 0);
+    background:  rgba(0, 0, 0, 0);
     background-size: 800% 800%;
 }
   

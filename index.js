@@ -26,6 +26,31 @@ function init() {
     for (i = 0; i < yearElems.length; i++) {
         yearElems[i].innerHTML = date.getFullYear();
     }
+
+    lightOrNight();
+}
+
+// Night mode!
+function lightOrNight() {
+    let date = new Date();
+    hour = date.getUTCHours();
+    console.log(date.getUTCHours())
+    console.log(typeof(hour))
+    
+
+    if (hour > 5 && hour < 18) {
+        document.getElementsByTagName("html")[0].style.filter = "invert()";
+        document.getElementsByTagName("html")[0].style.background = "rgb(255,255,255)";
+        document.getElementsByTagName("img")[i].style.filter = "invert()";
+        
+        for (i = 0; i < document.getElementsByTagName("img").length; i++) {
+            document.getElementsByTagName("img")[i].style.filter = "invert()";
+        }
+    }
+
+    if( date.getUTCHours < 16) {
+        console.log(typeof(date.getUTCHours()))
+    }
 }
 
 setInterval(() => {
