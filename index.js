@@ -27,7 +27,7 @@ function init() {
         yearElems[i].innerHTML = date.getFullYear();
     }
 
-    lightOrNight();
+    // lightOrNight();
 }
 
 // Night mode!

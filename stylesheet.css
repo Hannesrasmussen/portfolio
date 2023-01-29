@@ -5,6 +5,14 @@ html {
     height: 100%;
 }
 
+p {
+    text-shadow: 2px 2px 3px black;
+}
+
+a {
+    color: rgb(255, 255, 255);
+}
+
 img {
     user-select: none;
     -webkit-user-drag: none;
@@ -13,6 +21,7 @@ img {
 ::selection {
     color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
+    text-shadow: none;
 }
 
 body {
@@ -139,15 +148,32 @@ body {
     cursor: pointer;
 }
 
+#projects {
+    display: flex;
+    flex-direction: row;
+}
+
 .project {
-    margin: 5px;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 10px;
+    box-sizing: border-box;
     padding: 10px;
     border: solid 2px rgba(255, 255, 255, 0.162);
     border-radius: 15px;
+    width: 45%;
+    background-color:rgba(12, 12, 12, 0.483);
+}
+
+.project:hover {
+    transition: 0.9s;
+    transform: scale(1.05);
 }
 
 .project-description {
-    width: 50%;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
     margin: 5px;
 }
 .project-title {
@@ -155,10 +181,10 @@ body {
     color: white;
 }
 
-.project-img {
+/* .project-img {
     width: 50%;
     height: auto;
-}
+} */
 
 
 
@@ -455,6 +481,15 @@ p {
     }
     #about {
         display: block;
+    }
+
+    #projects {
+        display: block;
+        width: 100%;
+    }
+
+    .project {
+        width: 95%;
     }
 
     header {
