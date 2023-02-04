@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hannes Rasmussen</title>
     <link href="stylesheet.css" rel="stylesheet"></style>
-    <link rel="icon" type="image/x-icon" href="img/tengutake_logo.png">
+    <link rel="icon" type="image/png" href="favicon.png">
     <link href="extra_stylesheet.css" rel="stylesheet"></style>
 </head>
 
@@ -32,7 +32,10 @@
         </div>
         
         <div id="about">
-            <img id="about-img">
+            <div id="about-img">
+                <img src="img/me.png">
+            </div>
+            
             <div id="about-text">
                 <h1>Hannes Rasmussen</h1>
                 <h2>Frontend Developer</h2>
@@ -42,7 +45,7 @@
                 </p>
                 <p>
                     I am a team player with excellent communication skills and am comfortable working in fast paced collaborative environments. 
-                    I am experienced in working with .Net projects, and Agile methodologies. While I am most efficient in TypeScript and React, I am always eager to learn something new.
+                    While I am most effective with TypeScript and React, I am always eager to learn something new.
                 </p>
                 <div class="num">
                     <p class="specialities">Typescript</p>
@@ -67,29 +70,52 @@
         </div>
 
         <div  id="projects">
-            <div class="project" >
+            <div class="project" data-href="">
                 <div class="num">
                     <p>2023</p>
-                    <p>In development</p>
+                    <p>Work in progress</p>
                 </div>
                 <div class="project-description">
-                    <h2 class="project-title">"Workout logging app"</h2>
+                    <div class="project-title">
+                        <h2>React Native app</h2>
+                        <!--<img class="link-icon" src="img/icons/link.png">-->
+                    </div>
                     <p>
                         Currently working on a React Native application for logging and managing workouts.
                         I have always wanted a one-time purchase app for this purpose.. so I am making one.
                     </p>
                 </div>
             </div>
-    
-            <div class="project">
+
+            <div class="project" data-href="https://github.com/hannesrasmussen/Sprite.js">
                 <div class="num">
                     <p>2022</p>
                     <p>Released</p>
                 </div>
                 <div class="project-description">
-                    <h2 class="project-title"><a href="https://github.com/hannesrasmussen/Sprite.js" target="_blank">Sprite.js</a></h2>
+                    <div class="project-title">
+                        <h2>Sprite.js</h2>
+                        <img class="link-icon" src="img/icons/link.png">
+                    </div>
                     <p>
                         A Javascript module for creating and appending sprites. Made in the span of two months to test my skills at the time.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="project" data-href="applications/joust.html">
+                <div class="num">
+                    <p>2021</p>
+                    <p>Released</p>
+                </div>
+                <div class="project-description">
+                    <div class="project-title">
+                        <h2>Project Joust</h2>
+                        <img class="link-icon" src="img/icons/link.png">
+                    </div>
+                    <p>
+                        An arcade fighting game created for a University project. Completed within the span of two months.
+                        Received the highest grade possible. A very good end product considering the constraints.
                     </p>
                 </div>
             </div>
