@@ -150,6 +150,7 @@ body {
 }
 
 #projects {
+    justify-content: space-evenly;
     display: flex;
     flex-direction: row;
 }
@@ -309,7 +310,7 @@ p {
     font-family: 'Montserrat';
     font-weight: 200;
     color:rgb(255, 255, 255);
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .entry {
