@@ -162,7 +162,7 @@ addEventListener("resize", () => {
 });
 
 $('#site-landing').polygonizr({
-    numberOfNodes: 60,
+    numberOfNodes: 120,
     nodeEase: 'linear',
     duration: 10,
     // If set to true, the animation will rotate. Default: false

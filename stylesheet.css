@@ -149,6 +149,22 @@ body {
     cursor: pointer;
 }
 
+#contact-button {
+    font-family: 'Montserrat';
+    font-size: 15px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    border-radius: 15px;
+    padding:10px;
+} #contact-button:hover {
+    transition: 0.2s;
+    filter:invert();
+    cursor: pointer;
+}
+
 #projects {
     justify-content: space-evenly;
     display: flex;
@@ -353,14 +369,6 @@ p {
 ::-webkit-scrollbar-thumb {
     background-color: rgb(123, 123, 123);
     border-radius: 20px;
-}
-
-.specialities {
-    font-size: 15px;
-    color:rgb(255, 255, 255);
-    border: dotted 2px rgba(255, 255, 255, 0.162);
-    padding: 15px;
-    border-radius: 15px;
 }
 
 #extras-container {
