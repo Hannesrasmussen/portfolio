@@ -168,7 +168,7 @@ body {
 #projects {
     justify-content: space-evenly;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .project {
@@ -177,7 +177,7 @@ body {
     padding: 5px;
     border: solid 2px rgba(255, 255, 255, 0.162);
     border-radius: 15px;
-    width: 45%;
+    width: 100%;
 }
 
 .project .num {
