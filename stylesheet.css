@@ -240,10 +240,12 @@ body {
     z-index: 3;
 }
 
+/*
 .section:hover {
     transition: 2s;
     transform: scale(1.02);
 }
+*/
 
 .section-segment {
     margin: 0;
@@ -301,6 +303,7 @@ body {
     height: 300px;
     margin:auto;
     border-radius: 50%;
+    z-index: 2;
 }
 
 #about-text {
