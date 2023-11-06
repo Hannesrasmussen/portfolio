@@ -42,17 +42,8 @@ function init() {
             projects[i].style.backgroundColor = "rgb(7,7,7)";
             projects[i].addEventListener("click",function(e){
                 window.open(e.currentTarget.dataset.href)
-                
             })
         }
-
-        projects[i].addEventListener("click",function(e){
-            if (e.currentTarget.dataset.href == "") {
-                return;
-            } else {
-                window.open(e.currentTarget.dataset.href)
-            }
-        })
     }
 
     // Other:
