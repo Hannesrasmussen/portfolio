@@ -226,6 +226,11 @@ footer a img:hover {
     :root {
         --content-width: 85%;
     }
+
+    #filter {
+        background-image: url('./img/background-3.jpg');
+        animation: none;
+    }
     
     
     #album-element {
