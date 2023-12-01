@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600&family=Roboto:ital,wght@0,300;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600&family=Roboto:ital,wght@0,300;1,100&family=Rock+Salt&display=swap');
+:root {
+    --content-width: 60%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: black;
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+}
+
+#filter {
+    position: absolute;
+    height: 120%;
+    width: 120%;
+    opacity: 0.2;
+    background: black;
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: blur(1px) grayscale(1);
+    animation: wasteland 0.2s infinite;
+    z-index: 2;
+}
+#content {  
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    overflow-y: auto;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+#logo {
+    height: auto;
+    width: 300px;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    vertical-align: middle;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+}
+nav a {
+    font-family: 'Rock Salt', cursive;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+.nav-selected {
+    color: rgb(43, 43, 43);
+}
+
+.text-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.text-section p {
+    width: 50%;
+    color: white;
+    box-sizing: border-box;
+}
+
+#album-element {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: auto;
+    width: var(--content-width);
+    height: auto;
+
+    background-color: rgba(0, 0, 0, 0.500);
+    border-radius: 5px;
+}
+hr {
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#album-element-cover {
+    height: 100%;
+    width: 50%;
+    max-width: initial;
+    min-height: initial;
+    flex: none;
+
+    box-sizing: border-box;
+    border: solid 1px white;
+    background-color: black;
+}
+
+#album-element-text {
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    color: white;
+    font-weight: 100;
+    text-align: center;
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    font-size: 1vw;
+    height: auto;
+    overflow-y: auto;
+}
+
+#album-element-text h2 {
+    margin: 10px;
+    font-size: 30px;
+}
+
+#album-element-text h4 {
+    margin: 10px;
+    font-size: 15px;
+}
+#album-alternatives {
+    display: flex;
+    justify-content: space-evenly;
+    bottom: 0;
+    height: fit-content;
+    width: 100%;
+}
+.album-button {
+    background-color: rgba(255, 0, 0, 0);
+    border: solid 1px white;
+    width: 33%;
+    height: auto;
+    color: white;
+    padding: 10px;
+}
+.album-button:hover {
+    background-color: rgb(255, 255, 255); 
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+#track-list {
+    list-style: none;
+    height: 100%;
+    padding: 0;
+    flex: 1;
+}
+#track-list li {
+    margin: 10px;
+}
+#track-list span {
+    color: grey;
+    font-size: 10px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 10px;
+    bottom: 0px;
+    width: 100%;
+    height: 100px;
+}
+#links {
+    display: flex;
+    width: var(--content-width);
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    margin: auto;
+    border-radius: 5px;
+}
+footer a img {
+    width: 35px;
+    height: 35px;
+    filter: invert();
+}
+footer a img:hover {
+    transform: scale(1.05);
+}
+
+
+@keyframes wasteland {
+    0%, 25% { background-image: url('./img/background-1.jpg'); }
+    50% { background-image: url('./img/background-2.jpg'); }
+    100% { background-image: url('./img/background-3.jpg'); }
+}
+
+@media screen and (max-width: 1300px) {
+    :root {
+        --content-width: 75%;
+    }
+
+    .text-section  {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .text-section p{
+        width: var(--content-width);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    :root {
+        --content-width: 85%;
+    }
+    
+    
+    #album-element {
+        flex-direction: column;
+        justify-content: center;
+        box-sizing: border-box;
+        padding: 20px;
+        width: 75%;
+    }
+
+    #album-element-cover {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        margin: auto;
+
+        box-shadow: 3px 3px 10px black;
+    }
+
+    #album-element-text {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    #album-element-text h2 {
+        font-size: 30px;
+    }
+
+    footer {
+        position: sticky;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    #album-element {
+        width: 100%;
+    }
+
+    footer a img {
+        width: 25px;
+        height: 25px;
+    }
+}
