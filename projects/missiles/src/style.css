@@ -12,6 +12,7 @@ body {
     -webkit-font-smoothing: antialiased;
     font-family: Roboto, sans-serif;
     font-weight: 300;
+    color: white;
 }
 
 #filter {
@@ -22,8 +23,6 @@ body {
     background: black;
     background-size: contain;
     background-repeat: no-repeat;
-    filter: blur(1px) grayscale(1);
-    animation: wasteland 0.2s infinite;
     z-index: 2;
 }
 #content {  
@@ -67,18 +66,40 @@ nav a {
     color: rgb(43, 43, 43);
 }
 
+br {
+    height: 10px;
+}
+
 .text-section {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
 }
 .text-section p {
-    width: 50%;
+    width:var(--content-width);
+    margin: auto;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
     color: white;
+    font-size: 1.2em;
     box-sizing: border-box;
+
+    line-height: 1.3em;
 }
+#missiles-photo-container {
+    width: var(--content-width);
+    margin: auto;
+
+    border: 1px solid white;
+}
+#missiles-photo {
+    width: 100%;
+}
+
 
 #album-element {
     display: flex;
@@ -216,8 +237,17 @@ footer a img:hover {
         display: flex;
         justify-content: center;
     }
+    .text-sub-section  {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
 
     .text-section p{
+        width: var(--content-width);
+    }
+    .text-sub-section p {
         width: var(--content-width);
     }
 }
@@ -231,6 +261,14 @@ footer a img:hover {
         animation: none;
         height: 100%;
         width: 100%;
+    }
+
+    .text-sub-section {
+        flex-direction: column;
+    }
+    .text-sub-section div {
+        margin: auto;
+        box-sizing: border-box;
     }
     
     

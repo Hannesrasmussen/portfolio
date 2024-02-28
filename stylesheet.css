@@ -1,242 +1,246 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
 
 html {
-    background: rgb(0, 0, 0);
-    height: 100%;
+  background: rgb(0, 0, 0);
+  height: 100%;
 }
 
 p {
-    text-shadow: 2px 2px 3px black;
+  text-shadow: 2px 2px 3px black;
 }
 
 a {
-    color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 img {
-    user-select: none;
-    -webkit-user-drag: none;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 ::selection {
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
-    text-shadow: none;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  text-shadow: none;
 }
 
 body {
-    min-height: 100%;
-    margin: 0;
-    background: black;
-    overflow-x: hidden;
-    padding-bottom: 10px;
+  min-height: 100%;
+  margin: 0;
+  background: black;
+  overflow-x: hidden;
+  padding-bottom: 10px;
 }
 
 #popup-container {
-    display: none;
-    box-sizing: border-box;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    padding: 50px;
-    background-color: rgba(0, 0, 0, 0.775);
-    z-index: 29;
+  display: none;
+  box-sizing: border-box;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.775);
+  z-index: 29;
 }
 #close-button {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    width: fit-content;
-    height: fit-content;
-    font-size: 40px;
-    color: white;
-    vertical-align: 1px;
-    z-index: 33;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: fit-content;
+  height: fit-content;
+  font-size: 40px;
+  color: white;
+  vertical-align: 1px;
+  z-index: 33;
 }
 #close-button:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #popup-img {
-    background-color: black;
-    border: solid 1px white;
-    width: 100%;
-    height: auto;
-    transform: scale(0.98);
-    z-index: 32;
+  background-color: black;
+  border: solid 1px white;
+  width: 100%;
+  height: auto;
+  transform: scale(0.98);
+  z-index: 32;
 }
 
 #site-landing {
-    display: block;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    pointer-events: none;
-    position:sticky;
-    top: 0;
+  display: block;
+  height: 100%;
+  width: 100%;
+  transform: scale(1.5);
+  filter: blur(2);
+  left: 0;
+  pointer-events: none;
+  position: sticky;
+  top: 0;
 
-    z-index: 1;
+  z-index: 1;
 }
 
 #darkeffect {
-    position:fixed;
-    margin: 0;
-    pointer-events: none;
-    height: 50%;
-    width: 100%;
-    z-index: 31;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(10,7,7,0) 65%, rgba(0,0,0,1) 100%);
+  position: fixed;
+  margin: 0;
+  pointer-events: none;
+  height: 50%;
+  width: 100%;
+  z-index: 31;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(10, 7, 7, 0) 65%,
+    rgba(0, 0, 0, 1) 100%
+  );
 }
 
 #header {
-    position: sticky;
-    display: flex;
-    top: 0;
-    width: fit-content;
-    margin: auto;
-    justify-content:center;
-    padding: 15px;
-    z-index: 38;
-    text-align: center;
-    height: fit-content;
-    transition: 0.5s;
+  position: sticky;
+  display: flex;
+  top: 0;
+  width: fit-content;
+  margin: auto;
+  justify-content: center;
+  padding: 15px;
+  z-index: 38;
+  text-align: center;
+  height: fit-content;
+  transition: 0.5s;
 }
 
 #header a {
-    width: 50px;
-    height: 50px;
-    margin: 20px;
-    background-size: contain;
-    transition: 0.5s;
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+  background-size: contain;
+  transition: 0.5s;
 }
 
 #header a:hover {
-    transition: 0.5s;
-    transform: scale(1.05);
+  transition: 0.5s;
+  transform: scale(1.05);
 }
 
 #github {
-    background-image: url(img/icons/github-icon.png);
+  background-image: url(img/icons/github-icon.png);
 }
 #linkedin {
-    background-image: url(img/icons/linkedin-round-icon.png);
+  background-image: url(img/icons/linkedin-round-icon.png);
 }
-
 
 #header a:hover {
-    opacity: 100%;
-    transform: scale(1.05);
+  opacity: 100%;
+  transform: scale(1.05);
 }
-
 
 #logo {
-    margin: auto;
-    margin-left: 10px;
-    margin-right: 10px;
+  margin: auto;
+  margin-left: 10px;
+  margin-right: 10px;
 
-    width: 125px;
-    height: 125px;
-    transition: 0.3s;
+  width: 125px;
+  height: 125px;
+  transition: 0.3s;
 
-    background-color: rgba(0, 0, 0, 0.78);
-    border-radius: 50%;
-    z-index: 5;
+  background-color: rgba(0, 0, 0, 0.78);
+  border-radius: 50%;
+  z-index: 5;
 }
 #logo:hover {
-    transform: scale(1.04);
-    transition: 0.3s;
-    cursor: pointer;
+  transform: scale(1.04);
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 #contact-button {
-    font-family: 'Montserrat';
-    font-size: 15px;
-    color: white;
-    background-color: rgb(0, 0, 0);
-    border-style: solid;
-    border-width: 1px;
-    border-color: white;
-    border-radius: 15px;
-    padding:10px;
-} #contact-button:hover {
-    transition: 0.2s;
-    filter:invert();
-    cursor: pointer;
+  font-family: "Montserrat";
+  font-size: 15px;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  border-radius: 15px;
+  padding: 10px;
+}
+#contact-button:hover {
+  transition: 0.2s;
+  filter: invert();
+  cursor: pointer;
 }
 
 #projects {
-    justify-content: space-evenly;
-    display: flex;
-    flex-direction: column;
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
 }
 
 .project {
-    margin: 10px;
-    box-sizing: border-box;
-    padding: 5px;
-    border: solid 1px rgba(255, 255, 255, 0.162);
-    width: 100%;
+  margin: 10px;
+  box-sizing: border-box;
+  padding: 5px;
+  border: solid 1px rgba(255, 255, 255, 0.162);
+  width: 100%;
 }
 
 .project .num {
-    box-sizing: border-box;
-    padding: 10px;
-    padding-top: 0;
-    padding-bottom: 0;
+  box-sizing: border-box;
+  padding: 10px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .project:hover {
-    cursor: pointer;
-    transition: 0.9s;
-    transform: scale(1.02);
+  cursor: pointer;
+  transition: 0.9s;
+  transform: scale(1.02);
 }
 
 .project-description {
-    box-sizing: border-box;
-    padding: 10px;
-    width: 100%;
-    color: black;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+  color: black;
 }
 .project-description {
-    box-sizing: border-box;
-    padding: 10px;
-    width: 100%;
-    color: black;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+  color: black;
 }
 .project-description p {
-    font-size: 18px;
-    color:rgb(209, 209, 209);
+  font-size: 18px;
+  color: rgb(209, 209, 209);
 }
 .project-title {
-    display: flex;
-    justify-content:space-between;
-    margin: 0;
-    height: fit-content;
-    font-size: 20px;
-    color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  height: fit-content;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
 }
 .project-title h2 {
-    font-size: 30px;
-    margin: 0;
+  font-size: 30px;
+  margin: 0;
 }
 
 .link-icon {
-    width: 25px;
-    height: 25px;
+  width: 25px;
+  height: 25px;
 }
 
-
-
 .section {
-    border: dotted 2px rgba(255, 255, 255, 0.053);
-    margin-left: 145px;
-    margin-right: 145px;
-    margin-bottom: 20px;
-    padding: 20px;
-    transition: 2s;
+  border: dotted 2px rgba(255, 255, 255, 0.053);
+  margin-left: 145px;
+  margin-right: 145px;
+  margin-bottom: 20px;
+  padding: 20px;
+  transition: 2s;
 
-    z-index: 3;
+  z-index: 3;
 }
 
 /*
@@ -247,362 +251,358 @@ body {
 */
 
 .section-segment {
-    margin: 0;
-    width:33%;
-    height: 400px;
-    padding: 20px;
-    border: dotted 1px rgba(255, 255, 255, 0.036);
+  margin: 0;
+  width: 33%;
+  height: 400px;
+  padding: 20px;
+  border: dotted 1px rgba(255, 255, 255, 0.036);
 
-    color: white;
-    overflow-y: hidden;
-    overflow-x: hidden;
+  color: white;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .scrollable {
-    max-height: 325px;
-    min-height: fit-content;
-    width:100%;
-    border: dotted 3px rgba(255, 255, 255, 0.121);
-    border-radius: 15px;
-    overflow-x: none;
-    overflow-y: auto;
+  max-height: 325px;
+  min-height: fit-content;
+  width: 100%;
+  border: dotted 3px rgba(255, 255, 255, 0.121);
+  border-radius: 15px;
+  overflow-x: none;
+  overflow-y: auto;
 }
 
 .section-segment h2 {
-    color: white;
+  color: white;
 }
 .section-segment p {
-    color: rgb(138, 138, 138);
-    line-height: 45px;
-    font-size: 15px;
+  color: rgb(138, 138, 138);
+  line-height: 45px;
+  font-size: 15px;
 }
 
 #more-container {
-    display: flex;
+  display: flex;
 }
 
 .num {
-    display: flex;
-    justify-content: space-between;
-    color: rgb(255, 255, 255);
-    font-size: 30px;
-    width: 100%;
-    user-select: none;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  width: 100%;
+  user-select: none;
 }
 
 #about {
-    border: dotted 2px rgba(255, 255, 255, 0.021);
-    display: flex;
-    margin: auto;
-    width: 90%;
+  border: dotted 2px rgba(255, 255, 255, 0.021);
+  display: flex;
+  margin: auto;
+  width: 90%;
 }
 
 #about-img {
-    width: 300px;
-    height: 300px;
-    margin:auto;
-    border-radius: 50%;
-    z-index: 2;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  border-radius: 50%;
+  z-index: 2;
 }
 
 #about-text {
-    width: 50%;
-    margin: 0;
-    color: white;
-    padding: 30px;
+  width: 50%;
+  margin: 0;
+  color: white;
+  padding: 30px;
 }
 
 h1 {
-    font-family: 'Montserrat';
-    font-weight: 200;
-    font-size: 50px;
+  font-family: "Montserrat";
+  font-weight: 200;
+  font-size: 50px;
 }
 
 h2 {
-    font-family: 'Montserrat';
-    font-weight: 200;
-    font-size: 25px;
+  font-family: "Montserrat";
+  font-weight: 200;
+  font-size: 25px;
 }
 
 p {
-    font-family: 'Montserrat';
-    font-weight: 200;
-    color:rgb(255, 255, 255);
-    font-size: 15px;
+  font-family: "Montserrat";
+  font-weight: 200;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
 }
 
 .entry {
-    margin: 5px;
-    padding: 10px;
-    border: solid 2px rgba(255, 255, 255, 0.162);
-    border-radius: 15px;
+  margin: 5px;
+  padding: 10px;
+  border: solid 2px rgba(255, 255, 255, 0.162);
+  border-radius: 15px;
 }
 
 .entry-title {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .line-thing {
-    background-color: rgb(255, 255, 255);;
-    width: 2px;
-    margin: 10px;
-    height: 100%;
+  background-color: rgb(255, 255, 255);
+  width: 2px;
+  margin: 10px;
+  height: 100%;
 }
 
 .entry h2 {
-    font-size: 18px;
-    color: rgb(255, 255, 255);
+  font-size: 18px;
+  color: rgb(255, 255, 255);
 }
 .entry p {
-    margin-top: 0;
-    font-size: 16px;
-    line-height: 20px;
+  margin-top: 0;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 ::-webkit-scrollbar {
-    width: 7px;
+  width: 7px;
 }
-  
+
 ::-webkit-scrollbar-track {
-    background:  rgba(0, 0, 0, 0);
-    background-size: 800% 800%;
+  background: rgba(0, 0, 0, 0);
+  background-size: 800% 800%;
 }
-  
+
 ::-webkit-scrollbar-thumb {
-    background-color: rgb(123, 123, 123);
-    border-radius: 20px;
+  background-color: rgb(123, 123, 123);
+  border-radius: 20px;
 }
 
 #extras-container {
-    display: flex;
+  display: flex;
 }
 
 .extras-entry {
-    box-sizing: border-box;
-    margin: 5px;
-    padding: 20px;
-    border: solid 1px rgba(255, 255, 255, 0.162);
-    border-radius: 15px;
-    width: 33%;
+  box-sizing: border-box;
+  margin: 5px;
+  padding: 20px;
+  border: solid 1px rgba(255, 255, 255, 0.162);
+  border-radius: 15px;
+  width: 33%;
 }
 .extras-entry:hover {
-    transition: 0.5s;
-    background-color: rgba(255, 255, 255, 0.041);
-    color: black;
-    cursor:pointer;
+  transition: 0.5s;
+  background-color: rgba(255, 255, 255, 0.041);
+  color: black;
+  cursor: pointer;
 }
 
 .extras-img {
-    border: solid 1px white;
-    border-radius: 15px;
-    width: 100%;
-    margin: 0;
+  border: solid 1px white;
+  border-radius: 15px;
+  width: 100%;
+  margin: 0;
 }
 
 .entry-icon {
-    filter: invert(100%);
-    padding: 10px;
-    height: 25px;
-    width: 25px;
+  filter: invert(100%);
+  padding: 10px;
+  height: 25px;
+  width: 25px;
 }
 
-#credits{
-    bottom: 25px;
-    text-align: center;
-    color: white;
+#credits {
+  bottom: 25px;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+
+@media screen and (min-width: 1750px) {
+  .section {
+    width: 60%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  p {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 15px;
+  }
+
+  #about-text {
+    box-sizing: border-box;
+    width: 50%;
+  }
+
+  .specialities {
+    font-size: 13px;
+    border: solid 2px rgba(255, 255, 255, 0.162);
+    padding: 5px;
+  }
+
+  #more-container {
+    box-sizing: border-box;
+    display: block;
+  }
+  .section-segment {
+    box-sizing: border-box;
     width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  .scrollable {
+    border: dotted 2px rgba(255, 255, 255, 0.121);
+  }
 }
 
-@media screen and (min-width: 1750px){
-    .section {
-        width: 60%;
-        margin: auto;
-    }
+@media screen and (max-width: 1100px) {
+  .section {
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+  }
 
-}
+  #popup-container {
+    padding: 5px;
+  }
+  #popup-img {
+    width: 100%;
+    height: auto;
+  }
 
-@media screen and (max-width: 1600px){
-    p {
-        font-size: 17px;
-    }
-}
+  p {
+    font-size: 15px;
+  }
 
-@media screen and (max-width: 1450px){
-    h1 {
-        font-size: 30px;
-    }
-    h2 {
-        font-size: 20px;
-    }
-    p {
-        font-size: 15px;
-    }
+  #about {
+    display: flex;
+    text-align: center;
+  }
 
-    #about-text {
-        box-sizing: border-box;
-        width: 50%;
-    }
+  #about-img {
+    width: 200px;
+    height: 200px;
+  }
+  #about-text {
+    text-align: left;
+    box-sizing: border-box;
+    width: 50%;
+  }
 
-    .specialities {
-        font-size: 13px;
-        border: solid 2px rgba(255, 255, 255, 0.162);
-        padding: 5px;
-    }
-
-    #more-container {
-        box-sizing: border-box;
-        display: block;
-    }
-    .section-segment {
-        box-sizing: border-box;
-        width: 100%;
-        height: 100%;
-        margin: 0;
-    }
-    .scrollable {
-        border: dotted 2px rgba(255, 255, 255, 0.121);
-    }
-}
-
-
-@media screen and (max-width: 1100px){
-    .section { 
-        display: block;
-        margin-left: 10px;
-        margin-right: 10px;
-        padding: 5px;
-    }
-    
-    #popup-container {
-        padding: 5px;
-    }
-    #popup-img {
-        width: 100%;
-        height: auto;
-    }
-
-    p {
-        font-size: 15px;
-    }
-
-    #about {
-        display: flex;
-        text-align: center;
-    }
-
-    #about-img {
-        width: 200px;
-        height: 200px;
-    }
-    #about-text {
-        text-align: left;
-        box-sizing: border-box;
-        width: 50%;
-    }
-
-    .scrollable {
-        height: 300px;
-    }
+  .scrollable {
+    height: 300px;
+  }
 }
 
 @media screen and (max-width: 950px) {
-    .section, .section-segment{
-        border-style: none;
-    }
-    #about {
-        display: block;
-    }
+  .section,
+  .section-segment {
+    border-style: none;
+  }
+  #about {
+    display: block;
+  }
 
-    #projects {
-        display: block;
-        width: 100%;
-    }
+  #projects {
+    display: block;
+    width: 100%;
+  }
 
-    .project {
-        width: 95%;
-        margin: auto;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
+  .project {
+    width: 95%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 
-    header {
-        float: left;
-    }
+  header {
+    float: left;
+  }
 
-    .scrollable {
-        box-sizing: border-box;
-        padding: 5px;
-        border: solid 1px rgba(255, 255, 255, 0.279);
-        
-        border-radius: 15px;
-    }
-    .entry {
-        border: dotted 2px rgba(255, 255, 255, 0.148);
-    }
+  .scrollable {
+    box-sizing: border-box;
+    padding: 5px;
+    border: solid 1px rgba(255, 255, 255, 0.279);
 
+    border-radius: 15px;
+  }
+  .entry {
+    border: dotted 2px rgba(255, 255, 255, 0.148);
+  }
 
-
-    #about-text {
-        width: 100%;
-    }
+  #about-text {
+    width: 100%;
+  }
 }
 
-@media screen and (max-width: 670px){
+@media screen and (max-width: 670px) {
+  .section {
+    display: block;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+  }
 
-    .section { 
-        display: block;
-        margin-left: 5px;
-        margin-right: 5px;
-        padding: 5px;
-    }
+  .section-segment {
+    padding: 3px;
+  }
 
-    .section-segment {
-        padding: 3px;
-    }
+  .scrollable {
+    height: 200px;
+  }
 
-    .scrollable {
-        height: 200px;
-    }
+  .scrollable p {
+    font-size: 12px;
+    line-height: 14px;
+  }
 
-    .scrollable p {
-        font-size: 12px;
-        line-height: 14px;
-    }
-    
-    .scrollable h2 {
-        font-size: 17px;
-        line-height: 19px;
-    }
+  .scrollable h2 {
+    font-size: 17px;
+    line-height: 19px;
+  }
 
-    p {
-        font-size: 15px;
-    }
+  p {
+    font-size: 15px;
+  }
 
-    #about {
-        border: none;
-    }
+  #about {
+    border: none;
+  }
 
-    #about-text {
-        padding: 5px;
-    }
+  #about-text {
+    padding: 5px;
+  }
 
-    .specialities {
-        font-size: 10px;
-        border: solid 2px rgba(255, 255, 255, 0.162);
-        padding: 5px;
-        border-radius: 15px;
-    }
+  .specialities {
+    font-size: 10px;
+    border: solid 2px rgba(255, 255, 255, 0.162);
+    padding: 5px;
+    border-radius: 15px;
+  }
 
-    #extras-container {
-        display: block;
-    }
-    
-    .extras-entry {
-        box-sizing: border-box;
-        margin: 5px;
-        padding: 5px;
-        border-radius: 15px;
-        width: 100%;
-        color: black;
-    }
+  #extras-container {
+    display: block;
+  }
+
+  .extras-entry {
+    box-sizing: border-box;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 15px;
+    width: 100%;
+    color: black;
+  }
 }
