@@ -70,8 +70,7 @@ body {
 #site-landing {
   display: block;
   height: 100%;
-  width: 100%;
-  transform: scale(1.5);
+  width: 100%;p
   filter: blur(2);
   left: 0;
   pointer-events: none;
