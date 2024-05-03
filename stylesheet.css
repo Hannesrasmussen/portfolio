@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 
 html {
   background: rgb(0, 0, 0);
@@ -69,9 +69,6 @@ body {
 
 #site-landing {
   display: block;
-  height: 100%;
-  width: 100%;
-  transform: scale(1.5);
   filter: blur(2);
   left: 0;
   pointer-events: none;
@@ -155,7 +152,7 @@ body {
 }
 
 #contact-button {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 15px;
   color: white;
   background-color: rgb(0, 0, 0);
@@ -211,7 +208,7 @@ body {
   color: black;
 }
 .project-description p {
-  font-size: 18px;
+  font-size: 15px;
   color: rgb(209, 209, 209);
 }
 .project-title {
@@ -223,8 +220,11 @@ body {
   color: rgb(255, 255, 255);
 }
 .project-title h2 {
-  font-size: 30px;
+  font-size: 20px;
   margin: 0;
+}
+.project-warning {
+  text-align: center;
 }
 
 .link-icon {
@@ -234,21 +234,14 @@ body {
 
 .section {
   border: dotted 2px rgba(255, 255, 255, 0.053);
-  margin-left: 145px;
-  margin-right: 145px;
+  max-width: 800px;
+  margin: auto;
   margin-bottom: 20px;
   padding: 20px;
   transition: 2s;
 
   z-index: 3;
 }
-
-/*
-.section:hover {
-    transition: 2s;
-    transform: scale(1.02);
-}
-*/
 
 .section-segment {
   margin: 0;
@@ -289,7 +282,7 @@ body {
   display: flex;
   justify-content: space-between;
   color: rgb(255, 255, 255);
-  font-size: 30px;
+  font-size: 20px;
   width: 100%;
   user-select: none;
 }
@@ -305,8 +298,11 @@ body {
   width: 300px;
   height: 300px;
   margin: auto;
-  border-radius: 50%;
   z-index: 2;
+  border-radius: 50%;
+
+  outline: 2px solid rgb(255, 255, 255);
+  outline-offset: 5px;
 }
 
 #about-text {
@@ -317,19 +313,21 @@ body {
 }
 
 h1 {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-weight: 200;
-  font-size: 50px;
+  font-size: 40px;
+  white-space: nowrap;
 }
 
 h2 {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-weight: 200;
   font-size: 25px;
+  white-space: nowrap;
 }
 
 p {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-weight: 200;
   color: rgb(255, 255, 255);
   font-size: 15px;
@@ -413,8 +411,11 @@ p {
 #credits {
   bottom: 25px;
   text-align: center;
-  color: white;
+
   width: 100%;
+}
+#credits p {
+  color: rgba(255, 255, 255, 0.438);
 }
 
 @media screen and (min-width: 1750px) {
